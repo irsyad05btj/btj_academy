@@ -172,3 +172,84 @@ print(student_1.name) # Output Ryan
 print(student_2.course) # Output Frontend Programming
 print(student_1.school) # Output BTJ
 ```
+
+## Module & Package
+
+## Module
+
+Module adalah file yang berisikan kumpulan kode Python. Kode yang ada di dalamnya dapat berupa fungsi, variable, atau class.
+Kumpulan kode yang berisikan fungsi, variable atau class tersebut dapat disimpan di dalam module yang kemudian dapat digunakan kembali dengan cara mengimpor atau memanggil module tersebut.
+
+## Contoh Mengimpor Python Module Bawaan
+```python
+# Mengimport seluruh module datetime
+import datetime
+
+now = datetime.datetime.now()
+print(now) # Output datetime.datetime(2023, 11, 24, 13, 38, 10, 795486)
+
+# Mengimport sebagian dari module datetime
+from datetime import datetime
+
+now = datetime.now()
+print(now) # Output datetime.datetime(2023, 11, 24, 13, 38, 10, 795486)
+
+# Memberi alias pada module
+import datetime as dt
+
+now = dt.datetime.now()
+print(now) # Output datetime.datetime(2023, 11, 24, 13, 38, 10, 795486)
+```
+
+## Contoh Membuat Module Sendiri
+Buat file python baru, misal dengan nama hello_people.py, lalu tulis fungsi didalam file tersebut sesuai yang kamu inginkan.
+```python
+def greetings(name):
+    return f"Hello, {name} !!"
+```
+Di file python lain, kamu bisa memanggil module tersebut.
+```python
+import hello_people
+
+my_word = hello_people.greetings("Anton")
+print(my_word) # Output 'Halo, Anton !!'
+```
+
+## Package
+
+Package adalah sebuah cara untuk mengelola dan mengorganisir modul-modul python dalam bentuk direktori, yang memungkinan sebuah module untuk diakses menggunakan "namespace" dan "dot" lokasi.
+Untuk dapat menjadikan sebuah direktori sebagai package, di dalam direktori tersebut harus memiliki satu file bernama `__init__.py` yang memberitahukan kepada interpreter bahwa direktori tersebut adalah package yang berisikan module-module.
+
+## Contoh Directory Package
+```
+src/
+├── luas
+│   ├── __init__.py
+│   ├── lingkaran.py
+│   ├── persegi.py
+│   └── segitiga.py
+├── volume
+│   ├── __init__.py
+│   ├── bola.py
+│   ├── kubik.py
+│   └── trapesium.py
+└── main.py
+```
+File `__init__.py` cukup berupa file kosong, yang tidak perlu diisi apa pun.
+
+Untuk masing-masing file, silakan dibuatkan fungsi yang sesuai dengan module yang ingin dibuat.
+Contoh pada file lingkaran.py dapat ditambahkan fungsi untuk menghitung luas lingkaran.
+```python
+# Contoh Fungsi Menghitung Luas lingkaran
+def luas_lingkaran(r):
+    return round(3.14 * r * r)
+```
+
+## Contoh mengimpor package
+```python
+from luas.lingkaran import luas_lingkaran
+
+r = 7
+luas = luas_lingkaran(r)
+print(luas) # Output 153.86
+```
