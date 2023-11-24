@@ -253,3 +253,55 @@ r = 7
 luas = luas_lingkaran(r)
 print(luas) # Output 153.86
 ```
+
+## Decorator
+
+Decorator adalah fungsi yang melakukan operasi terhadap fungsi lain dan memodifikasi perilakunya tanpa harus mengubah secara eksplisit.
+
+## Contoh Decorator sederhana pada fungsi tanpa paramater
+```python
+# Contoh decorator
+def simple_decorator(func_name):
+    def hello():
+        print("Hello")
+        func_name()
+        print("How are you?")
+
+    return hello
+
+# Contoh penggunaan decorator
+@simple_decorator
+def person():
+    print('Jeni')
+
+person()
+# Output 
+# Hello
+# Jeni
+# How are you?
+```
+
+## Contoh decorator dengan fungsi yang memiliki paramater atau argumen
+
+Agar decorator dapat mendekorasi fungsi dengan paramater atau argimen, diperluikan tambahan argumen *args dan **kwargs dalam fungsi yang digunakan pada decorator
+```python
+# Contoh decorator
+def simple_decorator(func_name):
+    def hello(*args, **kwargs):
+        print("Hello")
+        func_name(*args, **kwargs)
+        print("How are you?")
+
+    return hello
+
+# Contoh penggunaan decorator
+@simple_decorator
+def person(name):
+    print(name)
+
+person('Jeni')
+# Output 
+# Hello
+# Jeni
+# How are you?
+```
