@@ -319,12 +319,12 @@ Isi file `bar_tab.py` dengan kode berikut.
 ```python
 class Tab:
     menu = {
-        "juice": 3,
-        "soft_drink": 15,
-        "chicken": 10,
-        "beef": 15,
-        "tea": 12,
-        "desert": 7
+        "juice": 10000,
+        "soft_drink": 15000,
+        "chicken": 30000,
+        "beef": 45000,
+        "tea": 10000,
+        "desert": 25000
     }
 
     def __init__(self):
