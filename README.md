@@ -254,7 +254,7 @@ luas = luas_lingkaran(r)
 print(luas) # Output 153.86
 ```
 
-## Decorator
+## Args, Kwargs, dan Decorator
 
 Decorator adalah fungsi yang melakukan operasi terhadap fungsi lain dan memodifikasi perilakunya tanpa harus mengubah secara eksplisit.
 
