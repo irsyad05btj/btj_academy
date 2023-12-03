@@ -256,7 +256,39 @@ print(luas) # Output 153.86
 
 ## Args, Kwargs, dan Decorator
 
+## Args & Kwargs
+Args adalah sintaks untuk memasukan argument dengan mewakilkan secara berurut tanpa memasukan keywarod, umumnya berbentuk list, tuple.
+
+Kwargs adalah sintaks untuk memasukan argument dengan mewakilkan secara berurut dengan memasukan keywarod, berbentuk dictionary.
+
+Contoh
+```python
+# muncul pada inisiasi
+def halo_nama(*args,**kwargs):
+    print([i for i in args])
+    print({k:v for k,v in kwargs.items()})
+    
+halo_nama('a',1,5,'bc',a=2,b='abc')
+
+
+# muncul pada penggunaan
+def halo(nama, umur):
+    print(nama)
+    print('dengan umur:', umur)
+    
+ar = ['Asep', 5]
+kw = {
+    'umur': 5,
+    'nama': 'Asep'
+}
+
+halo(*ar)
+halo(**kw)
+```
+
+## Decorator
 Decorator adalah fungsi yang melakukan operasi terhadap fungsi lain dan memodifikasi perilakunya tanpa harus mengubah secara eksplisit.
+Decorator merupakan fungsi yang menerima fungsi lain sebagai argumennya (first-class object). 
 
 ## Contoh Decorator sederhana pada fungsi tanpa paramater
 ```python
@@ -268,6 +300,11 @@ def simple_decorator(func_name):
         print("How are you?")
 
     return hello
+
+# Contoh bentuk tanpa decorator
+def person():
+    print('Jeni')
+person = simple_decorator(person)
 
 # Contoh penggunaan decorator
 @simple_decorator
@@ -283,7 +320,7 @@ person()
 
 ## Contoh decorator dengan fungsi yang memiliki paramater atau argumen
 
-Agar decorator dapat mendekorasi fungsi dengan paramater atau argimen, diperluikan tambahan argumen *args dan **kwargs dalam fungsi yang digunakan pada decorator
+Agar decorator dapat mendekorasi fungsi dengan paramater atau argumen, diperluikan tambahan argumen *args dan **kwargs dalam fungsi yang digunakan pada decorator
 ```python
 # Contoh decorator
 def simple_decorator(func_name):
@@ -293,6 +330,11 @@ def simple_decorator(func_name):
         print("How are you?")
 
     return hello
+
+# Contoh bentuk tanpa decorator
+def person(name):
+    print(name)
+person = simple_decorator(person('Jeni'))
 
 # Contoh penggunaan decorator
 @simple_decorator

@@ -23,8 +23,8 @@ func main() {
 	}
 }
 
-# Output
-# Lulus KKM
+// Output
+// Lulus KKM
 ```
 
 #### Statement ``if-else``
@@ -46,8 +46,8 @@ func main() {
 	}
 }
 
-# Output
-# Tidak Lulus KKM
+// Output
+// Tidak Lulus KKM
 ```
 
 ### Statement ``if-else if-else``
@@ -75,8 +75,8 @@ func main() {
 	}
 }
 
-# Output
-# Nilai Akhir: C
+// Output
+// Nilai Akhir: C
 ```
 
 ### Tipe Data dalam Golang
@@ -111,7 +111,7 @@ func main() {
   fmt.Println("Pembagian:   ", pembagian)  
 }
 
-# Output
+// Output
 Integer:    5
 Integer:    3
 Penjumlahan:  8
@@ -146,7 +146,7 @@ func main() {
   fmt.Println("Pembagian:   ", pembagian)  
 }
 
-# Output
+// Output
 ./prog.go:14:17: invalid operation: a + b (mismatched types int and float64)
 ./prog.go:15:17: invalid operation: a - b (mismatched types int and float64)
 ./prog.go:16:15: invalid operation: a * b (mismatched types int and float64)
@@ -179,7 +179,7 @@ func main() {
   fmt.Println(strings.Split(splittedString[0])
 }
 
-# Output
+// Output
 Ini adalah contoh message golang.
 INI ADALAH CONTOH MESSAGE GOLANG.
 Ini
@@ -206,7 +206,7 @@ func main() {
   }
 }
 
-# Output
+// Output
 Boolean:  true
 Ini kondisi ketika nilai benar
 ```
@@ -247,7 +247,7 @@ func main() {
     fmt.Println("array2:", array2)
 }
 
-# Output
+// Output
 empty_array: [0 0 0 0]
 set: [0 0 0 80]
 get: 80
@@ -296,7 +296,7 @@ func main() {
     copy(copy_slice, slice1)
     fmt.Println("copy_slice:", copy_slice)
 
-# Output
+// Output
 slice1: [] true true
 empty_slice: [  ] len: 3 cap: 3
 set: [ayam sapi domba]
@@ -360,7 +360,7 @@ func main() {
     }
 }
 
-# Output
+// Output
 map: map[a1:10 a2:15]
 len: 2
 v1: 10
@@ -395,7 +395,7 @@ func main() {
     fmt.Println("total =", total)
 }
 
-# Output
+// Output
 total = 120
 ```
 
@@ -418,7 +418,7 @@ func main() {
     }
 }
 
-# Output
+// Output
 0 Foo
 1 Bar
 ```
@@ -446,7 +446,7 @@ func main() {
     }
 }
 
-# Output
+// Output
 ayam 1
 sapi 2
 kambing 3
@@ -481,7 +481,7 @@ func main() {
     fmt.Println(string(content))
 }
 
-# Ouput
+// Ouput
 Hello World!!
 ```
 
@@ -523,7 +523,7 @@ func main() {
     }
 }
 
-# Output
+// Output
 Hello Word!!
 This is New file!!
 ```
@@ -567,7 +567,7 @@ func main() {
     }
 }
 
-# Ouput 
+// Ouput 
 Hello
 Word!!
 This
