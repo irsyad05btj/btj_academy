@@ -304,7 +304,7 @@ def simple_decorator(func_name):
 # Contoh bentuk tanpa decorator
 def person():
     print('Jeni')
-person = simple_decorator(person)
+simple_decorator(person)
 
 # Contoh penggunaan decorator
 @simple_decorator
@@ -334,7 +334,7 @@ def simple_decorator(func_name):
 # Contoh bentuk tanpa decorator
 def person(name):
     print(name)
-person = simple_decorator(person('Jeni'))
+simple_decorator(person('Jeni'))
 
 # Contoh penggunaan decorator
 @simple_decorator
@@ -346,58 +346,4 @@ person('Jeni')
 # Hello
 # Jeni
 # How are you?
-```
-
-## Create Simple Project / Program
-
-## Create Bar Tab Calculator
-Buat file `bar_tab.py` pada direktori src/
-```
-src/
-└── bar_tab.py
-```
-
-Isi file `bar_tab.py` dengan kode berikut.
-```python
-class Tab:
-    menu = {
-        "juice": 10000,
-        "soft_drink": 15000,
-        "chicken": 30000,
-        "beef": 45000,
-        "tea": 10000,
-        "desert": 25000
-    }
-
-    def __init__(self):
-        self.total = 0
-        self.items = []
-
-    def add(self, item):
-        self.items.append(item)
-        self.total += self.menu[item]
-
-    def print_bill(self, tax, service):
-        tax = (tax/100) * self.total
-        service = (service/100) * self.total
-        total = self.total + tax + service
-        
-        for item in self.items:
-            print(f"{item:20} Rp{self.menu[item]}")
-
-        print(f'{"Total":20} {total:.2f}')
-```
-
-Buka python terminal, dan impor Tab dari bar_tab.py seperti berikut.
-```python
->>> from bar_tab import Tab
->>> table1 = Tab()
->>> table1.add('soft_drink')
->>> table1.add('chicken')
->>> table1.add('desert')
->>> table1.print_bill(10, 5)
-soft_drink           Rp15000
-chicken              Rp30000
-desert               Rp25000
-Total                Rp80500.00
 ```

@@ -38,3 +38,51 @@ Total Harga: 130000
 Ketentuan
 - Code soal A: gunakan Decorator pada script
 - Code soal B: gunakan Class pada script
+
+
+### Soal 2
+hasil fungsi harus positif dan tidak boleh error dalam return apapun.
+
+Info: setiap fungsi memiliki attribute __name__
+
+```python
+def decorator():
+    # Lengkapi
+
+@decorator
+def substract_between_number(num1, num2):
+    selisih = num2 - num1 # selalu positif
+    print(f"{num2} - {num1} = {selisih}")
+
+def div_between_number(num1, num2):
+    pembagian = num2 / num1 # selalu > 1
+    print(f"{num2} / {num1} = {pembagian}")
+
+div_between_number(5,4)
+substract_between_number(5,4)
+
+div_between_number(10,88)
+substract_between_number(10,88)
+
+div_between_number(87,50)
+substract_between_number(87,50)
+
+div_between_number(1,0)
+substract_between_number(-1,0)
+```
+
+
+### Soal 3
+Kamu memiliki object berupa seorang siswa dengan tiga atribut yang menggambarkan:
+- Nama
+- Nilai
+- Absen
+
+Seorang siswa akan dianggap lulus jika:
+- Nilainya sama dengan atau lebih dari 75
+- Jumlah absennya kurang dari 4 kali
+
+Buatlah algoritma untuk:
+1. input nama, nilai dan absen pada setiap siswa
+2. menampilkan status setiap siswa (lulus atau tidak), beserta penyebabnya
+3. menampilkan jumlah siswa yang lulus dan berapa yang tidak lulus
