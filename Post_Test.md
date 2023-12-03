@@ -1,4 +1,6 @@
-### Post test
+# Post test
+
+## Ketentuan
 Buatlah package berisi perhitungan luas dan volume, dan lengkapi lah script main.py sehingga bisa memenuhi input dan output, gunakan skema yang telah dipelajari pada pertemuan ini.
 Hanya boleh menambah 1 Class pada main.py
 
@@ -19,7 +21,7 @@ if __name__ == "__main__":
     print(f"{tipe} {bentuk} dengan {param}: {result}")
 ```
 
-
+## Sample
 sample 1:
 ```
 Pilihlah Jenis Perhitungan (luas, volume): luas
@@ -41,3 +43,6 @@ Radius: 49
 
 Volume Bola dengan radius 44: 4188.79
 ```
+
+## Catatan
+Semakin banyak implemantasi dari materi hari ini, nilai akan semakin maksimum

@@ -36,5 +36,5 @@ List Belanja:
 Total Harga: 130000
 ```
 Ketentuan
-    Code soal A: gunakan Decorator pada script
-    Code soal B: gunakan Class pada script
+- Code soal A: gunakan Decorator pada script
+- Code soal B: gunakan Class pada script
