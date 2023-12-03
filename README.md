@@ -232,7 +232,7 @@ src/
 │   ├── __init__.py
 │   ├── bola.py
 │   ├── kubik.py
-│   └── trapesium.py
+│   └── silinder.py
 └── main.py
 ```
 File `__init__.py` cukup berupa file kosong, yang tidak perlu diisi apa pun.
