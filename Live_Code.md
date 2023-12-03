@@ -7,7 +7,7 @@
 4. Jika sudah selesai bisa melakukan push
 
 
-### Soal 1
+## Soal 1
 Tolong Buat 1 script yang bisa menyelesaikan perhitungan harga barang dengan jika diinput menu barang sebagai berikut.
 
 ```json
@@ -40,7 +40,7 @@ Ketentuan
 - Code soal B: gunakan Class pada script
 
 
-### Soal 2
+## Soal 2
 hasil fungsi harus positif dan tidak boleh error dalam return apapun.
 
 Info: setiap fungsi memiliki attribute __name__
@@ -72,7 +72,7 @@ substract_between_number(-1,0)
 ```
 
 
-### Soal 3
+## Soal 3
 Kamu memiliki object berupa seorang siswa dengan tiga atribut yang menggambarkan:
 - Nama
 - Nilai
