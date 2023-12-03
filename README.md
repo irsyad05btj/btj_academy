@@ -270,6 +270,9 @@ def halo_nama(*args,**kwargs):
     
 halo_nama('a',1,5,'bc',a=2,b='abc')
 
+# Output
+# ['a', 1, 5, 'bc']
+# {'a': 2, 'b': 'abc'}
 
 # muncul pada penggunaan
 def halo(nama, umur):
@@ -284,6 +287,9 @@ kw = {
 
 halo(*ar)
 halo(**kw)
+# Output
+# Asep
+# dengan umur: 5
 ```
 
 ## Decorator
@@ -304,7 +310,8 @@ def simple_decorator(func_name):
 # Contoh bentuk tanpa decorator
 def person():
     print('Jeni')
-simple_decorator(person)
+person = simple_decorator(person)
+person()
 
 # Contoh penggunaan decorator
 @simple_decorator
@@ -312,6 +319,7 @@ def person():
     print('Jeni')
 
 person()
+
 # Output 
 # Hello
 # Jeni
@@ -334,7 +342,8 @@ def simple_decorator(func_name):
 # Contoh bentuk tanpa decorator
 def person(name):
     print(name)
-simple_decorator(person('Jeni'))
+person = simple_decorator(person)
+person()
 
 # Contoh penggunaan decorator
 @simple_decorator
