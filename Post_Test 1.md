@@ -1,6 +1,6 @@
 # Post test
 
-## Ketentuan
+## Soal
 Buatlah package berisi perhitungan luas dan volume, dan lengkapi lah script main.py sehingga bisa memenuhi input dan output, gunakan skema yang telah dipelajari pada pertemuan ini.
 Hanya boleh menambah 1 Class pada main.py
 
@@ -46,3 +46,7 @@ Volume Bola dengan radius 44: 4188.79
 
 ## Catatan
 Semakin banyak implemantasi dari materi hari ini, nilai akan semakin maksimum
+
+
+
+
