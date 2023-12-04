@@ -223,12 +223,12 @@ Untuk dapat menjadikan sebuah direktori sebagai package, di dalam direktori ters
 ## Contoh Directory Package
 ```
 src/
-├── luas
+├── luas/
 │   ├── __init__.py
 │   ├── lingkaran.py
 │   ├── persegi.py
 │   └── segitiga.py
-├── volume
+├── volume/
 │   ├── __init__.py
 │   ├── bola.py
 │   ├── kubik.py
