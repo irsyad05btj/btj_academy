@@ -259,7 +259,7 @@ print(luas) # Output 153.86
 ## Args & Kwargs
 Args adalah sintaks untuk memasukan argument dengan mewakilkan secara berurut tanpa memasukan keywarod, umumnya berbentuk list, tuple.
 
-Kwargs adalah sintaks untuk memasukan argument dengan mewakilkan secara berurut dengan memasukan keywarod, berbentuk dictionary.
+Kwargs adalah sintaks untuk memasukan argument yang mewakilkan dengan memasukan keywarod, berbentuk dictionary.
 
 Contoh
 ```python
