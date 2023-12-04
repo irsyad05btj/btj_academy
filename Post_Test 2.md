@@ -1,7 +1,7 @@
 # Post test
 
 ## Soal
-Buatlah aplikasi sesuai flow chart berikut
+Buatlah program sesuai flow chart berikut
 
 ![Flow_chart_1.png](Flow_chart_1.png)
 
